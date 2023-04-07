@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1,
+  h2 {
+    @apply font-bold font-blackhans;
+  }
+
+  body {
+    @apply font-opensans;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl lg:text-4xl xl:text-5xl pb-5 tracking-wide font-bold font-roboto;
+  }
+
+  p {
+    @apply text-sm md:text-base lg:text-lg xl:text-xl;
+  }
+}
+@layer components {
+  .btn {
+    @apply py-4 px-8 rounded-full text-base lg:text-lg xl:text-xl hover:shadow-lg hover:shadow-black/20 duration-200;
+  }
+
+  .btn-white {
+    @apply bg-white text-black hover:text-primary;
+  }
+  .btn-black {
+    @apply bg-black text-white;
+  }
+  .btn-blue {
+    @apply bg-primary text-white w-full sm:w-80;
+  }
+
+  .footerLink {
+    @apply hover:underline text-sm lg:text-base;
+  }
+}
